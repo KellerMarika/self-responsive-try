@@ -27,11 +27,11 @@
 <body>
     <!-- navbar fissa in alto -->
     <nav>
-        <div id="navbar" class="nav container">
+        <div id="navbar" class="nav container row">
 
             <!-- logo a sx sempre -->
 
-            <div class="nav-leftcontainer">
+            <div class="nav-leftcontainer col">
                 <div class="logo">
                     <!-- mobile :logo     desktop:logo-pond -->
                     <img src="img/logo.png" alt="logo pond">
@@ -43,12 +43,12 @@
             </div>
 
             <!-- search mobile: icona a dx      desktop: centrale -->
-            <div class="nav-center">
+            <div class="nav-center col">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input type="search">
             </div>
             <!-- nenù mobile:sandwitch   desktop: ul -->
-            <div class="nav-right menu">
+            <div class="nav-right menu col">
                 <i class="fa-solid fa-bars"></i>
                 <div class="list-menu">
                     <ul>
@@ -76,12 +76,12 @@
     <!-- contenitore di  -->
     <main>
         <!-- contenitore di aside + cards + user  -->
-        <div id="maxi-container" class="container">
+        <div id="maxi-container" class="container row">
 
 
             <aside>
                 <!-- aside-menu  mobile :flex dir column piccolo in alto  desktop grande a lato row-->
-                <div id="menu" class="aside-container">
+                <div id="menu" class="aside-container col col-20">
 
                     <!--  contenitore di categoria-->
                     <div class="caregory-container">
@@ -121,7 +121,7 @@
             <section>
                 <!-- sezione centrale con maxi bunner + e-commerce + bunners -->
                 <!-- flex resta fisso -->
-                <div id="central-container">
+                <div id="central-container col col-60">
                     <!-- bunner che scorrono se cliccati i pulsanti -->
                     <!-- si restringe ma resta fisso-->
 
@@ -162,9 +162,9 @@
                         <!-- sezione vendite- mobile:1col desktop 3col-->
                         <div id="products">
                             <!-- flex wrap 6ele scroll a lato -->
-                            <div class="cards-container">
+                            <div class="cards-container row">
 
-                                <div class="card">
+                                <div class="card col-30">
                                     <!-- testa carta relative -->
                                     <div class="card-head">
                                         <img src="https://picsum.photos/seed/picsum/300/350" alt="lorem-picsum">
@@ -198,60 +198,60 @@
                     </section>
 
                     <!-- bunner-bar flex wrap esperimento greed -->
-                    <article id="partner-bunner">
-                        <div class="bnnr-blu">
-                            <div class="azzurro">
-                                <div class="white">
+                    <article id="partner-bunner row ">
+                        <div class="bnnr-blu row col">
+                            <div class="azzurro row col">
+                                <div class="white col">
                                 </div>
-                                <div class="white">
-                                </div>
-                            </div>
-                            <div class="azzurro">
-                                <div class="white">
-                                </div>
-                                <div class="white">
+                                <div class="white  col">
                                 </div>
                             </div>
-                        </div>
-                        <div class="bnnr-verde">
-                            <div class="lime">
-                                <div class="giallo">
+                            <div class="azzurro row col">
+                                <div class="white col">
                                 </div>
-                                <div class="giallo">
-                                </div>
-                            </div>
-                            <div class="lime">
-                                <div class="giallo">
-                                </div>
-                                <div class="giallo">
+                                <div class="white col">
                                 </div>
                             </div>
                         </div>
-                        <div class="bnnr-rosso">
-                            <div class="arancio">
-                                <div class="salmone">
+                        <div class="bnnr-verde row col">
+                            <div class="lime row col">
+                                <div class="giallo col ">
                                 </div>
-                                <div class="salmone">
+                                <div class="giallo col">
                                 </div>
                             </div>
-                            <div class="arancio">
-                                <div class="salmone">
+                            <div class="lime"row col>
+                                <div class="giallo col ">
                                 </div>
-                                <div class="salmone">
+                                <div class="giallo col">
                                 </div>
                             </div>
                         </div>
-                        <div class="bnnr-viola">
-                            <div class="fuxia">
-                                <div class="rosa">
+                        <div class="bnnr-rosso row col">
+                            <div class="arancio row col">
+                                <div class="salmone col">
                                 </div>
-                                <div class="rosa">
+                                <div class="salmone colp">
                                 </div>
                             </div>
-                            <div class="fuxia">
-                                <div class="rosa">
+                            <div class="arancio row col">
+                                <div class="salmone col">
                                 </div>
-                                <div class="rosa">
+                                <div class="salmone col">
+                                </div>
+                            </div>
+                        </div>p
+                        <div class="bnnr-viola row col">
+                            <div class="fuxia row col">
+                                <div class="rosa row col ">
+                                </div>
+                                <div class="rosa row col">
+                                </div>
+                            </div>
+                            <div class="fuxia row col">
+                                <div class="rosa row col ">
+                                </div>
+                                <div class="rosa row col">
                                 </div>
                             </div>
                         </div>
@@ -259,7 +259,7 @@
 
                     <article>
                         <!--menu-utente  mobile :flex dir column piccolo in alto  desktop grande a lato dx row-->
-                        <div id="user-nav" class="user-container">
+                        <div id="user-nav" class="user-container col-20">
                             <div class="user-head">
                                 <img src="https://picsum.photos/id/1/300/200" alt="user-face">
                                 <div class="title">
@@ -293,12 +293,116 @@
 
                             </div>
                         </div>
-
-
                     </article>
-
                 </div>
             </section>
+
+            <footer>
+                <div id="footer-container">
+                    <div class=" row row_40-20-20-20">
+
+                        <div class="col col-40">
+                            <div class="title">
+                                <h2>social</h2>
+                                <div class="social-footer">
+                                    <ul>
+                                        <li>
+                                            <i class="fa-brands fa-square-facebook"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-brands fa-square-facebook"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-brands fa-square-facebook"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-brands fa-square-facebook"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-brands fa-square-facebook"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-brands fa-square-facebook"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col col-20">
+                            <div class="title">
+                                <h3>title</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">voce1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">voce2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">voce3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">voce4</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">voce5</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col col-20">
+                            <div class="title">
+                                <h3>title</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">voce1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">voce2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">voce3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">voce4</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">voce5</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col col-20">
+                            <div class="title">
+                                <h3>title</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">voce1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">voce2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">voce3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">voce4</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">voce5</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            </footer>
+
+
+
+        </div>
 
 
 
