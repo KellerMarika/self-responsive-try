@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>responsive</title>
+
+    <!-- icone -->
+    <script src="https://kit.fontawesome.com/a19b158346.js" crossorigin="anonymous"></script>
+
+    <!-- font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
+
+</head>
+
+<body>
+    <!-- navbar fissa in alto -->
+    <nav>
+        <div id="navbar" class="nav container">
+
+            <!-- logo a sx sempre -->
+
+            <div class="nav-leftcontainer">
+                <div class="logo">
+                    <!-- mobile :logo     desktop:logo-pond -->
+                    <img src="img/logo.png" alt="logo pond">
+                    <img src="img/logo-name.png" alt="logo pond">
+
+                    <!-- h1 mobile: centro      desktop: none-->
+                    <h1>LOGO POND</h1>
+                </div>
+            </div>
+
+            <!-- search mobile: icona a dx      desktop: centrale -->
+            <div class="nav-center">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search">
+            </div>
+            <!-- nenù mobile:sandwitch   desktop: ul -->
+            <div class="nav-right menu">
+                <i class="fa-solid fa-bars"></i>
+                <div class="list-menu">
+                    <ul>
+                        <li>
+                            <a href="#">home</a>
+                        </li>
+                        <li>
+                            <a href="#">about</a>
+                        </li>
+                        <li>
+                            <a href="#">services</a>
+                        </li>
+                        <li>
+                            <a href="#">contact</a>
+                        </li>
+                        <li>
+                            <a href="#">feedback</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- contenitore di  -->
+    <main>
+        <!-- contenitore di aside + cards + user  -->
+        <div id="maxi-container" class="container">
+
+
+            <aside>
+                <!-- aside-menu  mobile :flex dir column piccolo in alto  desktop grande a lato row-->
+                <div id="menu" class="aside-container">
+
+                    <!--  contenitore di categoria-->
+                    <div class="caregory-container">
+                        <h3>category 1</h3>
+                        <!-- voci della categoria -->
+                        <div class="category-voices">
+                            <ul>
+                                <li>
+                                    <a href="#">voice1</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">voice1</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">voice1</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">voice1</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">voice1</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">voice1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <section>
+                <!-- sezione centrale con maxi bunner + e-commerce + bunners -->
+                <!-- flex resta fisso -->
+                <div id="central-container">
+                    <!-- bunner che scorrono se cliccati i pulsanti -->
+                    <!-- si restringe ma resta fisso-->
+
+                    <article id="slider-bunner">
+                        <!-- width 100% overflow:hidden -->
+                        <div id="slider-container">
+
+
+
+                            <!-- position relative width 100% transition: translate x  fit-object-->
+                            <div class="bunner_1">
+
+                                <label for="bunner1">
+                                    <!-- voglio aggiungere un icona a forma di ninfea . * . -->
+                                    <!-- position absolute -->
+                                    <input id="bunner1" type="radio">
+
+                                </label>
+                            </div>
+
+                            <div class="bunner_2">
+
+                                <label for="bunner2">
+                                    <input id="bunner2" type="radio">
+                                </label>
+                            </div>
+
+                            <div class="bunner_3">
+
+                                <label for="bunner3">
+                                    <input id="bunner3" type="radio">
+                                </label>
+                            </div>
+                        </div>
+                    </article>
+
+                    <section>
+                        <!-- sezione vendite- mobile:1col desktop 3col-->
+                        <div id="products">
+                            <!-- flex wrap 6ele scroll a lato -->
+                            <div class="cards-container">
+
+                                <div class="card">
+                                    <!-- testa carta relative -->
+                                    <div class="card-head">
+                                        <img src="https://picsum.photos/seed/picsum/300/350" alt="lorem-picsum">
+                                        <!-- i cuori si switchano se cliccati -->
+                                        <!-- absolute -->
+                                        <a href="#">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+
+                                        <!-- body carta -->
+                                        <div class="card-body">
+                                            <div class="title">
+                                                <h3>card</h3>p
+                                            </div>
+
+                                        </div>
+
+                                        <div class="card-foot">
+                                            <div class="price">50</div>
+                                            <div class="cart">
+                                                <i class="fa-solid fa-cart-arrow-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- bunner-bar flex wrap esperimento greed -->
+                    <article id="partner-bunner">
+                        <div class="bnnr-blu">
+                            <div class="azzurro">
+                                <div class="white">
+                                </div>
+                                <div class="white">
+                                </div>
+                            </div>
+                            <div class="azzurro">
+                                <div class="white">
+                                </div>
+                                <div class="white">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bnnr-verde">
+                            <div class="lime">
+                                <div class="giallo">
+                                </div>
+                                <div class="giallo">
+                                </div>
+                            </div>
+                            <div class="lime">
+                                <div class="giallo">
+                                </div>
+                                <div class="giallo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bnnr-rosso">
+                            <div class="arancio">
+                                <div class="salmone">
+                                </div>
+                                <div class="salmone">
+                                </div>
+                            </div>
+                            <div class="arancio">
+                                <div class="salmone">
+                                </div>
+                                <div class="salmone">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bnnr-viola">
+                            <div class="fuxia">
+                                <div class="rosa">
+                                </div>
+                                <div class="rosa">
+                                </div>
+                            </div>
+                            <div class="fuxia">
+                                <div class="rosa">
+                                </div>
+                                <div class="rosa">
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <!--menu-utente  mobile :flex dir column piccolo in alto  desktop grande a lato dx row-->
+                        <div id="user-nav" class="user-container">
+                            <div class="user-head">
+                                <img src="https://picsum.photos/id/1/300/200" alt="user-face">
+                                <div class="title">
+                                    <h3>name</h3>
+                                </div>
+                                <div class="subtitle">
+                                    <h2>subtitle</h2>
+                                </div>
+
+                                <div class="user-body">
+                                    <div class="stars">
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+
+                                    <div class="title">
+                                        <h4>title</h4>
+                                        <div class="text">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro autem animi
+                                            beatae inventore quas consectetur non eos quasi officia rerum, enim eum,
+                                            totam pariatur similique nam ex, corporis molestiae Lorem ipsum dolor sit
+                                            amet consectetur adipisicing elit. Id, vero autem facilis accusamus officia
+                                            laboriosam molestiae harum ab animi! Tempora cum doloremque numquam aperiam
+                                            adipisci omnis tenetur sed ducimus delectus!
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </article>
+
+                </div>
+            </section>
+
+
+
+
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
