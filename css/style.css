@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/********************************
+       VARIABII GLOBALI 
+********************************/
+:root {
+    /* ****************************** */
+    --primary-color: #221709;
+    --secondary-color: #34a894;
+    --thirdary-color: #b0d136;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.row {
+    display: flex;
+
+}
+
+.col-20 {
+    width: 20%;
+}
+
+.col-40 {
+    width: 40%;
+}
+
+[class*="container"] {
+    width: 100%;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/******* NAV  *****************************/
+
+nav {
+    background-color: var(--primary-color);
+    color: --secondary-color,
+}
+
+nav button {
+    font-size: 1.5rem;
+    padding: 15px;
+    position: relative;
+    border: none;
+    background-color: transparent;
+    color: var(--secondary-color)
+}
+
+.logo #mobile-logo {
+    width: 60px;
+}
+
+.nav-container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-center {
+    align-items: center;
+    position: relative;
+}
+
+nav h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+}
+
+nav h1 .white {
+    color: white;
+}
+
+nav h1 .green {
+    color: var(--thirdary-color)
+}
+
+nav input[type="search"] {
+    position: absolute;
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+    background-image: url(../img/magnifying-glass-solid.svg);
+    background-color: transparent;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 30px;
+    aspect-ratio: 1/1;
+    right: -85px;
+    transition: width 0.5s;
+}
+nav input[type="search"]:focus{
+    width: 150px;
+    aspect-ratio:initial;
+    background-size: 20%;
+    background-position: right;
+    background-color:#34a894;
+}
+.title{
+    transition: transform .5s;
+}
+nav input[type="search"]:focus + .title{
+    transform: translateX(-90px);
+}
+
+.menu .list-menu {
+    background-color: #704b1b96;
+    position: absolute;
+    padding: 10px;
+    right: 0;
+    top: 58px;
+    text-align: right;
+    display: none;
+}
+
+.list-menu li {
+    padding: 5px;
+}
+
+.list-menu a {
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 5px;
+}
+
+.menu .menu-icon:hover+.list-menu {
+    display: inline;
+}
+
+/* 4 desktop- display */
+nav .logo #desktop-logo {
+    display: none;
+}
+
+
+
+/* *****************************
+           FOOTER
+***************************** */
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color)
+}

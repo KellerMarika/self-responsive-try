@@ -27,29 +27,34 @@
 <body>
     <!-- navbar fissa in alto -->
     <nav>
-        <div id="navbar" class="nav container row">
+        <div id="navbar" class="nav-container row">
 
             <!-- logo a sx sempre -->
 
-            <div class="nav-leftcontainer col">
+            <div class="nav-left col">
                 <div class="logo">
                     <!-- mobile :logo     desktop:logo-pond -->
-                    <img src="img/logo.png" alt="logo pond">
-                    <img src="img/logo-name.png" alt="logo pond">
-
-                    <!-- h1 mobile: centro      desktop: none-->
-                    <h1>LOGO POND</h1>
+                    <img id="mobile-logo" src="img/logo.png" alt="logo pond">
+                    <img id="desktop-logo" src="img/logo-name.png" alt="logo pond">
                 </div>
             </div>
 
             <!-- search mobile: icona a dx      desktop: centrale -->
-            <div class="nav-center col">
-                <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="nav-center row col">
+
+                <!-- h1 mobile: centro      desktop: none-->
+                
+
                 <input type="search">
+                <div class="title">
+                    <h1 class="title"><span class="white">LOGO</span> <span class="green">POND</span></h1>
+                </div>
             </div>
             <!-- nenù mobile:sandwitch   desktop: ul -->
-            <div class="nav-right menu col">
-                <i class="fa-solid fa-bars"></i>
+            <div class="nav-right menu  row col">
+                <button class="menu-icon"><i class="fa-solid fa-bars"></i></button>
+
+
                 <div class="list-menu">
                     <ul>
                         <li>
@@ -76,12 +81,12 @@
     <!-- contenitore di  -->
     <main>
         <!-- contenitore di aside + cards + user  -->
-        <div id="maxi-container" class="container row">
+        <div id="maxi container" class="container row">
 
 
             <aside>
                 <!-- aside-menu  mobile :flex dir column piccolo in alto  desktop grande a lato row-->
-                <div id="menu" class="aside-container col col-20">
+                <div id="menu" class="asidecontainer col col-20">
 
                     <!--  contenitore di categoria-->
                     <div class="caregory-container">
@@ -220,7 +225,7 @@
                                 <div class="giallo col">
                                 </div>
                             </div>
-                            <div class="lime"row col>
+                            <div class="lime" row col>
                                 <div class="giallo col ">
                                 </div>
                                 <div class="giallo col">
@@ -296,122 +301,112 @@
                     </article>
                 </div>
             </section>
-
-            <footer>
-                <div id="footer-container">
-                    <div class=" row row_40-20-20-20">
-
-                        <div class="col col-40">
-                            <div class="title">
-                                <h2>social</h2>
-                                <div class="social-footer">
-                                    <ul>
-                                        <li>
-                                            <i class="fa-brands fa-square-facebook"></i>
-                                        </li>
-                                        <li>
-                                            <i class="fa-brands fa-square-facebook"></i>
-                                        </li>
-                                        <li>
-                                            <i class="fa-brands fa-square-facebook"></i>
-                                        </li>
-                                        <li>
-                                            <i class="fa-brands fa-square-facebook"></i>
-                                        </li>
-                                        <li>
-                                            <i class="fa-brands fa-square-facebook"></i>
-                                        </li>
-                                        <li>
-                                            <i class="fa-brands fa-square-facebook"></i>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-
-
-                        <div class="col col-20">
-                            <div class="title">
-                                <h3>title</h3>
-                                <ul>
-                                    <li>
-                                        <a href="#">voce1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">voce2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">voce3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">voce4</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">voce5</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col col-20">
-                            <div class="title">
-                                <h3>title</h3>
-                                <ul>
-                                    <li>
-                                        <a href="#">voce1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">voce2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">voce3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">voce4</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">voce5</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col col-20">
-                            <div class="title">
-                                <h3>title</h3>
-                                <ul>
-                                    <li>
-                                        <a href="#">voce1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">voce2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">voce3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">voce4</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">voce5</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-            </footer>
-
-
-
-        </div>
-
-
-
-
-
         </div>
 
     </main>
 
+    <footer>
+        <div id="footer-container">
+            <div class=" row row_40-20-20-20">
+
+                <div class="col col-40">
+                    <div class="title">
+                        <h2>social</h2>
+                        <div class="social-footer">
+                            <ul>
+                                <li>
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col col-20">
+                    <div class="title">
+                        <h3>title</h3>
+                        <ul>
+                            <li>
+                                <a href="#">voce1</a>
+                            </li>
+                            <li>
+                                <a href="#">voce2</a>
+                            </li>
+                            <li>
+                                <a href="#">voce3</a>
+                            </li>
+                            <li>
+                                <a href="#">voce4</a>
+                            </li>
+                            <li>
+                                <a href="#">voce5</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col col-20">
+                    <div class="title">
+                        <h3>title</h3>
+                        <ul>
+                            <li>
+                                <a href="#">voce1</a>
+                            </li>
+                            <li>
+                                <a href="#">voce2</a>
+                            </li>
+                            <li>
+                                <a href="#">voce3</a>
+                            </li>
+                            <li>
+                                <a href="#">voce4</a>
+                            </li>
+                            <li>
+                                <a href="#">voce5</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col col-20">
+                    <div class="title">
+                        <h3>title</h3>
+                        <ul>
+                            <li>
+                                <a href="#">voce1</a>
+                            </li>
+                            <li>
+                                <a href="#">voce2</a>
+                            </li>
+                            <li>
+                                <a href="#">voce3</a>
+                            </li>
+                            <li>
+                                <a href="#">voce4</a>
+                            </li>
+                            <li>
+                                <a href="#">voce5</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </footer>
 </body>
 
 </html>
