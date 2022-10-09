@@ -5,23 +5,24 @@
 }
 
 /********************************
-       VARIABII GLOBALI 
+        VARIABII GLOBALI 
 ********************************/
 :root {
-    /* ****************************** */
     --primary-color: #221709;
-    --secondary-color: #34a894;
+    --secondary-color: #63c5c4;
     --thirdary-color: #b0d136;
-
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: antiquewhitePP;
 }
 
+/********************************
+        CLASS UTILITIES 
+*********************************/
 .row {
     display: flex;
-
 }
 
 .col-20 {
@@ -36,6 +37,21 @@ body {
     width: 100%;
 }
 
+/* colors */
+.white {
+    color: white;
+}
+
+.green {
+    color: var(--thirdary-color)
+}
+
+/***************************
+        GENERALI
+****************************/
+h2 {
+    font-size: 1.2rem;
+}
 
 a {
     text-decoration: none;
@@ -45,8 +61,12 @@ li {
     list-style-type: none;
 }
 
-/******* NAV  *****************************/
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+}
 
+/******* NAV  *****************************/
 nav {
     background-color: var(--primary-color);
     color: --secondary-color,
@@ -58,7 +78,7 @@ nav button {
     position: relative;
     border: none;
     background-color: transparent;
-    color: var(--secondary-color)
+    color: var(--secondary-color);
 }
 
 .logo #mobile-logo {
@@ -73,19 +93,6 @@ nav button {
 .nav-center {
     align-items: center;
     position: relative;
-}
-
-nav h1 {
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 900;
-}
-
-nav h1 .white {
-    color: white;
-}
-
-nav h1 .green {
-    color: var(--thirdary-color)
 }
 
 nav input[type="search"] {
@@ -103,28 +110,35 @@ nav input[type="search"] {
     right: -85px;
     transition: width 0.5s;
 }
-nav input[type="search"]:focus{
+
+nav input[type="search"]:focus {
     width: 150px;
-    aspect-ratio:initial;
+    aspect-ratio: initial;
     background-size: 20%;
     background-position: right;
-    background-color:#34a894;
+    background-color: var(--secondary-color);
 }
-.title{
-    transition: transform .5s;
-}
-nav input[type="search"]:focus + .title{
+
+nav input[type="search"]:focus+.title {
     transform: translateX(-90px);
 }
 
+.title {
+    transition: transform .5s;
+}
+
 .menu .list-menu {
-    background-color: #704b1b96;
+    background-color: #63c5c3c0;
     position: absolute;
     padding: 10px;
     right: 0;
     top: 58px;
     text-align: right;
     display: none;
+}
+
+.menu .menu-icon:hover+.list-menu {
+    display: inline;
 }
 
 .list-menu li {
@@ -137,13 +151,64 @@ nav input[type="search"]:focus + .title{
     padding: 5px;
 }
 
-.menu .menu-icon:hover+.list-menu {
-    display: inline;
+/* 4 desktop- display */
+
+.caregory-container {
+    display: flex;
+    flex-direction: column;
 }
 
-/* 4 desktop- display */
 nav .logo #desktop-logo {
     display: none;
+}
+
+
+
+/* *****************************
+           MAXI-CONTAINER
+***************************** */
+#maxi-container {
+    flex-direction: column;
+}
+
+
+/*************CATEGORY****************/
+
+.caregory-container {
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.category-title{
+    background-color: #bbb7b3;
+}
+
+.caregory-container a {
+    display: inline-block;
+    padding: 5px 10px;
+    color: #221709;
+
+}
+
+.caregory-container a:hover + .category-voices {
+    display: inline-block;
+    background-color: #bbb7b386;
+}
+
+.category-voices:hover{
+    color: red;
+}
+
+.caregory-container h2 {
+    display: none;
+}
+
+.caregory-container .category-voices {
+    display: none;
+
+
+
 }
 
 
